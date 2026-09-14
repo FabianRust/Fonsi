@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona z obrazkiem</title>
+    <style>
+        /* Usuwamy domyślne marginesy i ustawiamy pełny ekran */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Zapobiega pojawianiu się pasków przewijania */
+            background-color: #000; /* Opcjonalnie: czarne tło w razie wolnego ładowania */
+        }
+
+        /* Styl dla obrazka, który dopasowuje się do ekranu telefonu */
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Dopasowuje obrazek tak, aby wypełnił cały ekran, zachowując proporcje */
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <img src="fonsi.png" alt="Obraz fonis">
+    <img src="fonis.png" alt="Obraz fonis">
 </body>
 </html>
